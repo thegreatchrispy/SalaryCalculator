@@ -44,7 +44,7 @@ def calculateCurrent(salary, start):
 
 	while True:
 		current = int(time.time())
-		earned += perSecond * (current - start)
+		earned = perSecond * (current - start)
 		sys.stdout.write("Earned: " + '${:,.2f}'.format(earned) + '\r')
 		sys.stdout.flush()
 		time.sleep(1.0)
